@@ -17,8 +17,6 @@ h2 {
 h3 {
   font-size: 30px;
 }
-
-/* proměnné */
 .button {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -36,7 +34,6 @@ h3 {
   max-width: -moz-max-content;
   max-width: max-content;
   padding: 20px;
-  /* zanoření */
 }
 .button a:hover {
   background-color: #62d42d;
@@ -154,20 +151,17 @@ h3 {
 
   .fourth-page {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr;
-    grid-template-areas: 'fourth-top fourth-top' 'fourth-left fourth-right';
+    grid-template-areas: 'fourth-top' 'fourth-bottom';
   }
   .fourth-page__block--top {
     grid-area: fourth-top;
     align-self: end;
     text-align: center;
   }
-  .fourth-page__block--left {
-    grid-area: fourth-left;
-  }
-  .fourth-page__block--right {
-    grid-area: fourth-right;
+  .fourth-page__block--bottom {
+    grid-area: fourth-bottom;
   }
 }
 /* Šířka nad 1200 px */ /*# sourceMappingURL=styles.css.map */
