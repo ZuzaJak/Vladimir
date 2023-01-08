@@ -17,33 +17,11 @@ h2 {
 h3 {
   font-size: 30px;
 }
-.button {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.button a {
-  background-color: #6be831;
-  border-radius: 20px;
-  text-decoration: none;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  padding: 20px;
-}
-.button a:hover {
-  background-color: #62d42d;
-  transition: 0.3s ease-in;
-}
 
 /* Šířka do 576 px */
 .first-page {
   color: #ffffff;
-  background-color: #5b4848;
+  background-color: #3e363f;
 }
 
 /* Šířka 576 - 768 px */
@@ -52,4 +30,4 @@ h3 {
 @media screen and (min-width: 992px) {
 }
 
-/* Šířka nad 1200 px */ /*# sourceMappingURL=styles.css.map */
+/* Šířka nad 1200 px */
