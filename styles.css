@@ -20,16 +20,53 @@ h3 {
   font-size: 30px;
 }
 
-/* Šířka do 576 px */
-.first-page {
+/* Šířka do 576 px - default*/
+.homepage {
   color: #ffffff;
   background-color: #3e363f;
+  height: 100vh;
+}
+.navbar {
+  position: relative;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px; /* adjust as needed */
+  height: 2px; /* adjust as needed */
+  background-color: #000; /* adjust as needed */
+  margin: 6px 0; /* adjust as needed */
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* adjust as needed */
+  left: 0;
+  right: 0;
+}
+.menu {
+  transition: visibility 0s linear 1s, opacity 1s linear;
+}
+
+.hamburger:hover:active + .menu,
+.hamburger:focus:active + .menu {
+  display: block;
 }
 
 /* Šířka 576 - 768 px */
+@media screen and (min-width: 576px) {
+}
 /* Šířka 768 - 992 px */
+@media screen and (min-width: 768px) {
+}
 /* Šířka 992 - 1200 */
 @media screen and (min-width: 992px) {
 }
-
 /* Šířka nad 1200 px */
+@media screen and (min-width: 1200px) {
+}
