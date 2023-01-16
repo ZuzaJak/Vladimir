@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Miriam Libre', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 .logo-color {
   fill: #ffffff;
@@ -11,53 +13,50 @@ body {
 h1 {
   font-size: 40px;
 }
-
 h2 {
   font-size: 35px;
 }
-
 h3 {
   font-size: 30px;
 }
 
 /* Šířka do 576 px - default*/
-.homepage {
+.header {
   color: #ffffff;
   background-color: #3e363f;
-  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
 }
 .navbar {
   position: relative;
 }
-
 .hamburger {
   display: block;
   cursor: pointer;
 }
-
 .line {
-  width: 25px; /* adjust as needed */
-  height: 2px; /* adjust as needed */
-  background-color: #000; /* adjust as needed */
-  margin: 6px 0; /* adjust as needed */
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 6px 0;
 }
-
 .menu {
   display: none;
-  position: absolute;
-  top: 50px; /* adjust as needed */
-  left: 0;
-  right: 0;
 }
-.menu {
-  transition: visibility 0s linear 1s, opacity 1s linear;
+li,
+li a {
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
 }
-
-.hamburger:hover:active + .menu,
-.hamburger:focus:active + .menu {
-  display: block;
+.homepage {
+  color: #ffffff;
+  background: url(img/Banner_vertical.jpg) no-repeat center top fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
-
 /* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
 }
