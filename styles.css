@@ -26,11 +26,11 @@ h3 {
   color: #ffffff;
   background-color: #3e363f;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   grid-template-areas:
-    'logo hamburger'
-    '. navigation';
+    'logo logo hamburger'
+    '. navigation navigation';
   padding: 20px;
   position: sticky;
   top: 0;
@@ -63,6 +63,7 @@ li {
 li a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 20px;
 }
 li a:hover:focus {
   text-decoration: underline;
