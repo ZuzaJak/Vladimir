@@ -9,7 +9,7 @@ body {
   fill: #ffffff;
 }
 h1 {
-  font-size: 64px;
+  font-size: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -69,8 +69,11 @@ li a:hover:focus {
 }
 .homepage {
   color: #ffffff;
-  background: url(img/Banner_vertical.jpg) no-repeat center top fixed;
+  background-image: url(img/Banner_vertical.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
@@ -78,8 +81,7 @@ li a:hover:focus {
     '.'
     'heading'
     'cta';
-  padding: 20px;
-  width: 100%;
+  padding: 10px;
   min-height: 100vh;
 }
 .homepage h1 {
@@ -96,7 +98,8 @@ li a:hover:focus {
   width: 250px;
   padding: 30px;
   border-radius: 20px;
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .cta p a {
   text-decoration: none;
