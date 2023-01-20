@@ -69,7 +69,7 @@ li a:hover:focus {
 }
 .homepage {
   color: #ffffff;
-  background: url(img/Banner_vertical.jpg) no-repeat center top;
+  background: url(img/Banner_vertical.jpg) no-repeat center top fixed;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
