@@ -8,19 +8,20 @@ body {
 .logo-color {
   fill: #ffffff;
 }
+
 h1 {
   font-size: 60px;
   display: flex;
   flex-direction: column;
 }
-h2 {
-  font-size: 35px;
-}
+
 h3 {
   font-size: 30px;
 }
 
 /* Šířka do 576 px - default*/
+
+/* HEADER - NAVIGACE*/
 .header {
   max-width: 100%;
   color: #ffffff;
@@ -68,6 +69,8 @@ li a {
 li a:hover:focus {
   text-decoration: underline;
 }
+
+/* HOMEPAGE */
 .homepage {
   color: #ffffff;
   background-image: url(img/Banner_vertical.jpg);
@@ -82,7 +85,7 @@ li a:hover:focus {
     '.'
     'heading'
     'cta';
-  padding: 10px;
+  padding: 20px;
   min-height: 100vh;
 }
 .homepage h1 {
@@ -95,6 +98,7 @@ li a:hover:focus {
   align-items: center;
 }
 .cta p {
+  margin: 5px 0;
   text-align: center;
   width: 250px;
   padding: 30px;
@@ -111,6 +115,37 @@ li a:hover:focus {
 }
 .cta-dospeli {
   background-color: #67c650;
+}
+
+/* KURZY PRO DĚTI - WETVARKA */
+.wetvarka {
+  padding: 20px;
+  background-color: #c88080;
+  color: #ffffff;
+  font-size: 18px;
+}
+.wetvarka h2 {
+  padding-top: 30px;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+.wetvarka .brown-text {
+  color: #3e363f;
+}
+.wetvarka .font-size-medium {
+  font-size: 36px;
+  text-align: center;
+}
+.wetvarka .font-size-small {
+  font-size: 24px;
+}
+.cta-deti-brown {
+  background-color: #3e363f;
+}
+.wetvarka img {
+  max-width: 100%;
+  margin-top: 20px;
 }
 /* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
