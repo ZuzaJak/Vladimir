@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Miriam Libre', sans-serif;
-  display: flex;
-  flex-direction: column;
 }
 .logo-color {
   fill: #ffffff;
 }
 h1 {
-  font-size: 40px;
+  font-size: 64px;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   font-size: 35px;
@@ -22,42 +22,91 @@ h3 {
 
 /* Šířka do 576 px - default*/
 .header {
+  max-width: 100%;
   color: #ffffff;
   background-color: #3e363f;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    'logo hamburger'
+    '. navigation';
+  padding: 20px;
   position: sticky;
   top: 0;
 }
-.navbar {
-  position: relative;
+.logo {
+  grid-area: logo;
 }
 .hamburger {
-  display: block;
+  width: 100%;
+  grid-area: hamburger;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   cursor: pointer;
 }
 .line {
   width: 25px;
   height: 2px;
   background-color: #ffffff;
-  margin: 6px 0;
+  margin: 3px 0;
 }
 .menu {
   display: none;
+  grid-area: navigation;
+  margin: 0;
 }
-li,
+li {
+  list-style: none;
+}
 li a {
   color: #ffffff;
-  list-style: none;
   text-decoration: none;
+}
+li a:hover:focus {
+  text-decoration: underline;
 }
 .homepage {
   color: #ffffff;
-  background: url(img/Banner_vertical.jpg) no-repeat center top fixed;
+  background: url(img/Banner_vertical.jpg) no-repeat center top;
   background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    '.'
+    'heading'
+    'cta';
+  padding: 20px;
   width: 100%;
   min-height: 100vh;
+}
+.homepage h1 {
+  grid-area: heading;
+}
+.cta {
+  grid-area: cta;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta p {
+  text-align: center;
+  width: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 28px;
+}
+.cta p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.cta-deti {
+  background-color: #c88080;
+}
+.cta-dospeli {
+  background-color: #67c650;
 }
 /* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
