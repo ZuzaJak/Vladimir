@@ -52,16 +52,47 @@ h3 {
   grid-area: navigation;
   margin: 0;
 }
-li {
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.menu li {
+  margin-bottom: 5px;
   list-style: none;
 }
-li a {
+.menu-item {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  position: relative;
+  font-size: 28px;
 }
-li a:hover:focus {
+/* .menu-item:focus {
   text-decoration: underline;
+} */
+
+.menu-item:hover {
+  color: #ffffff;
+}
+.menu-item:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  margin-right: 10px;
+  height: 3px;
+  background: #c88080;
+  transition: right 0.5s;
+}
+.menu-item:hover:after {
+  right: 0;
+}
+.menu-item:active:after {
+  right: 0;
+}
+.menu-item:current:after {
+  right: 0;
 }
 
 /* HOMEPAGE */
@@ -99,10 +130,16 @@ li a:hover:focus {
 .cta p {
   margin: 5px 0;
   border-radius: 20px;
-  width: 350px;
-  height: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 70px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+.cta p:hover {
+  transform: scale(1.05);
 }
 .cta a {
   text-decoration: none;
