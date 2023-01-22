@@ -65,7 +65,7 @@ h3 {
   color: #ffffff;
   text-decoration: none;
   position: relative;
-  font-size: 28px;
+  font-size: 22px;
 }
 /* .menu-item:focus {
   text-decoration: underline;
@@ -81,7 +81,7 @@ h3 {
   left: 0;
   right: 100%;
   margin-right: 10px;
-  height: 3px;
+  height: 2px;
   background: #c88080;
   transition: right 0.5s;
 }
