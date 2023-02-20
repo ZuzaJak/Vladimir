@@ -63,7 +63,7 @@ h3 {
   list-style: none;
 }
 .menu-item {
-  color: #7a717a;
+  color: #b4afb4;
   text-decoration: none;
   position: relative;
   font-size: 22px;
@@ -132,11 +132,76 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-.cta-deti {
+.cta-ruzova {
   background-color: #c88080;
 }
-.cta-dospeli {
+.cta-zelena {
   background-color: #67c650;
+}
+.cta-margin {
+  margin: 20px;
+}
+/* O CREATIWE*/
+.about-creatiwe {
+  background-color: #f5f5f5;
+}
+.about-creatiwe h2 {
+  color: #3e363f;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+.about-creatiwe-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'box1'
+    'box2'
+    'box3';
+  color: #dad4cd;
+  margin-bottom: 30px;
+}
+.box1 {
+  grid-area: box1;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
+.about-creatiwe-box-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 80%;
+  justify-self: center;
+}
+.about-creatiwe-h3 {
+  background-color: #3e363f;
+  padding: 35px;
+  border-radius: 20px 20px 0 0;
+  height: 100px;
+}
+.about-creatiwe-h3 h3 {
+  margin: 0;
+}
+
+.about-creatiwe-box {
+  padding: 35px;
+  background-color: #312832;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  min-height: 400px;
+}
+.ema {
+  color: #67c650;
 }
 
 /* KURZY PRO DĚTI - WETVARKA */
@@ -257,7 +322,7 @@ h3 {
     background-size: contain;
     background-position: right bottom;
   }
-  .cta {
+  .homepage .cta {
     align-items: flex-start;
   }
 }
@@ -281,12 +346,17 @@ h3 {
   .hamburger {
     display: none;
   }
-  .cta {
+  .homepage .cta {
     flex-direction: row;
     align-items: center;
     justify-content: left;
   }
-  .cta p {
+  .homepage .cta p {
     margin: 10px;
+  }
+  .about-creatiwe-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'box1 box2 box3';
   }
 }
