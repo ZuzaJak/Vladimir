@@ -63,7 +63,7 @@ h3 {
   list-style: none;
 }
 .menu-item {
-  color: #ffffff;
+  color: #7a717a;
   text-decoration: none;
   position: relative;
   font-size: 22px;
@@ -73,46 +73,26 @@ h3 {
 } */
 
 .menu-item:hover {
-  color: #ffffff;
+  color: #67c650;
 }
-.menu-item::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  margin-right: 10px;
-  height: 2px;
-  background: #c88080;
-  transition: right 0.5s;
-}
-.menu-item:hover::after {
-  right: 0;
-}
-.menu-item:active::after {
-  right: 0;
-}
-.menu-item:current::after {
-  right: 0;
-}
-
 /* HOMEPAGE */
 .homepage {
   color: #ffffff;
-  background-image: url(img/Banner_vertical.jpg);
+  background-image: url(img/Banner_vertical.png);
+  background-color: #3e363f;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position-x: -20px;
+  background-position-y: bottom;
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    '.'
     'heading'
     'cta';
   padding: 20px;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 .homepage h1 {
   font-size: 64px;
@@ -265,13 +245,48 @@ h3 {
 
 /* Šířka 576 - 768 px */
 @media screen and (min-width: 576px) {
+  .homepage {
+    background-size: cover;
+    background-position-x: 100px;
+    background-position-y: bottom;
+  }
 }
 /* Šířka 768 - 992 px */
 @media screen and (min-width: 768px) {
+  .homepage {
+    background-size: contain;
+    background-position: right bottom;
+  }
+  .cta {
+    align-items: flex-start;
+  }
 }
-/* Šířka 992 - 1200 */
-@media screen and (min-width: 992px) {
-}
-/* Šířka nad 1200 px */
+/* Šířka nad 1200px */
 @media screen and (min-width: 1200px) {
+  .header {
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+      'logo navigation navigation'
+      'logo navigation navigation';
+  }
+  #menu {
+    display: block;
+  }
+  .menu ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: none;
+  }
+  .cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+  .cta p {
+    margin: 10px;
+  }
 }
