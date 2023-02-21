@@ -350,6 +350,12 @@ h3 {
   .hamburger {
     display: none;
   }
+  .homepage {
+    min-height: 100vh;
+  }
+  .homepage h1 {
+    font-size: 100px;
+  }
   .homepage .cta {
     flex-direction: row;
     align-items: center;
@@ -362,5 +368,13 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'box1 box2 box3';
+  }
+}
+/* Šířka nad 2000px */
+@media screen and (min-width: 2000px) {
+  .header {
+    grid-template-areas:
+      'logo logo navigation'
+      'logo logo navigation';
   }
 }
